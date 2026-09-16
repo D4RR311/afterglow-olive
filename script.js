@@ -14,7 +14,7 @@ const CONFIG = {
      * GANTI nilai ini dengan URL Web App
      * Google Apps Script setelah deployment.
      */
-    API_URL: "https://script.google.com/macros/s/AKfycbyoiQ74HV9vRGKbFdwuZ1hPGhaFs1oRh7O7Ci1Evt3kFSB2Q3vc_2npKjqWNLzvTOo/exec",
+    API_URL: "https://script.google.com/macros/s/AKfycbyZyoIL6qfmQ0njq-JmEwiWVuUSyJyL-oK8x_gRweAZl1-2TVhGgA5Y5Pf6marCew1w/exec",
 
     /*
      * URL Google Maps yang digunakan adalah
