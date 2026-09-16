@@ -272,8 +272,8 @@ a {
 ========================================= */
 
 .hero {
+    position: relative;
     min-height: 100svh;
-
     padding-top: calc(var(--header-height) + 80px);
     padding-bottom: 100px;
 
@@ -292,45 +292,65 @@ a {
         var(--cream);
 }
 
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
 .hero-content {
-    width: 100%;
+    width: min(100% - 40px, var(--container));
+    margin-inline: auto;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
 }
+
+
+/* =========================================
+   HERO NAMES
+========================================= */
 
 .hero-names {
     margin-top: 22px;
+    width: 100%;
 }
 
 .hero-names h1 {
+    width: 100%;
     max-width: 900px;
+    margin-inline: auto;
 
     color: var(--text);
-
     font-family: var(--font-display);
     font-size: clamp(45px, 8vw, 88px);
     font-weight: 500;
-
     line-height: 0.92;
+
+    text-align: center;
 }
 
 .ampersand {
     margin: 9px 0;
 
     color: var(--gold);
-
     font-family: var(--font-display);
     font-size: clamp(32px, 5vw, 52px);
-
     font-style: italic;
 }
+
+
+/* =========================================
+   HERO DIVIDER
+========================================= */
 
 .hero-divider {
     display: flex;
     align-items: center;
-
+    justify-content: center;
     gap: 13px;
 
     margin: 30px 0 18px;
@@ -342,13 +362,16 @@ a {
 .hero-divider span:last-child {
     width: 55px;
     height: 1px;
-
     background: var(--gold-light);
 }
 
+
+/* =========================================
+   HERO DATE
+========================================= */
+
 .hero-date {
     font-family: var(--font-display);
-
     font-size: 23px;
     font-weight: 500;
 }
@@ -357,43 +380,42 @@ a {
     margin-top: 3px;
 
     color: var(--text-soft);
-
     font-size: 11px;
-
     letter-spacing: 0.08em;
 }
 
 
 /* =========================================
-   HERO PHOTO
+   COUPLE PHOTO
 ========================================= */
 
 .hero-photo {
     width: 100%;
 
+    margin: 38px 0 30px;
+
     display: flex;
     justify-content: center;
-
-    margin: 38px 0 28px;
+    align-items: center;
 }
 
 .photo-frame {
     width: min(340px, 80vw);
-
     aspect-ratio: 4 / 5;
 
     padding: 10px;
 
     border: 1px solid var(--gold-light);
-
     background: var(--white);
 
     box-shadow:
         0 25px 70px rgba(48, 45, 39, 0.08);
+
+    overflow: hidden;
 }
 
 
-/* FOTO ASLI */
+/* FOTO DI DALAM FRAME */
 
 .photo-frame img {
     width: 100%;
@@ -402,47 +424,7 @@ a {
     display: block;
 
     object-fit: cover;
-}
-
-
-/* =========================================
-   PHOTO PLACEHOLDER
-========================================= */
-
-.photo-placeholder {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 7px;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(112, 112, 47, 0.08),
-            rgba(185, 151, 91, 0.12)
-        );
-
-    color: var(--olive);
-}
-
-.photo-placeholder span {
-    font-family: var(--font-display);
-
-    font-size: 24px;
-
-    letter-spacing: 0.08em;
-}
-
-.photo-placeholder small {
-    font-size: 8px;
-
-    letter-spacing: 0.2em;
+    object-position: center;
 }
 
 
@@ -452,44 +434,50 @@ a {
 
 .countdown-wrapper {
     width: 100%;
+    margin: 0 0 34px;
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
 
-    margin: 8px 0 38px;
+    text-align: center;
 }
+
+
+/* Countdown Label */
 
 .countdown-label {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 
     color: var(--text-soft);
-
     font-size: 9px;
     font-weight: 600;
-
     letter-spacing: 0.25em;
-
-    text-transform: uppercase;
 }
+
+
+/* Countdown Numbers */
 
 .countdown {
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     gap: 15px;
+
+    width: fit-content;
+    margin-inline: auto;
 }
+
+
+/* Individual Number */
 
 .countdown-item {
     min-width: 58px;
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
 }
@@ -498,7 +486,6 @@ a {
     color: var(--olive);
 
     font-family: var(--font-display);
-
     font-size: 38px;
     font-weight: 500;
 
@@ -509,30 +496,38 @@ a {
     margin-top: 5px;
 
     color: var(--text-soft);
-
     font-size: 8px;
-
     letter-spacing: 0.08em;
-
     text-transform: uppercase;
 }
 
-.countdown-separator {
-    margin-top: -13px;
 
+/* Countdown Separator */
+
+.countdown-separator {
     color: var(--gold);
 
     font-family: var(--font-display);
-
     font-size: 25px;
 }
+
+
+/* Countdown Finished */
 
 .countdown-finished {
     color: var(--olive);
 
     font-family: var(--font-display);
-
     font-size: 27px;
+}
+
+
+/* =========================================
+   HERO BUTTON
+========================================= */
+
+.hero-content > .button {
+    flex-shrink: 0;
 }
 
 
@@ -545,6 +540,7 @@ a {
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     gap: 13px;
 
@@ -566,6 +562,11 @@ a {
     background: var(--gold-light);
 }
 
+
+/* =========================================
+   SCROLL INDICATOR
+========================================= */
+
 .scroll-indicator {
     position: absolute;
 
@@ -574,7 +575,6 @@ a {
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
 
     gap: 8px;
@@ -582,7 +582,6 @@ a {
     color: var(--text-soft);
 
     font-size: 8px;
-
     letter-spacing: 0.18em;
 
     writing-mode: vertical-rl;
@@ -594,7 +593,6 @@ a {
 
     background: var(--gold-light);
 }
-
 
 /* =========================================
    BUTTONS
