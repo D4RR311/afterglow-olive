@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -13,7 +15,12 @@
         content="Undangan pernikahan Teresa Sekar Pramitha dan Stefanus Bagas Narendra."
     >
 
-    <title>Teresa & Stefanus — Wedding Invitation</title>
+    <title>
+        Teresa & Stefanus — Wedding Invitation
+    </title>
+
+
+    <!-- Google Fonts -->
 
     <link
         rel="preconnect"
@@ -31,20 +38,33 @@
         rel="stylesheet"
     >
 
+
+    <!-- Main CSS -->
+
     <link
         rel="stylesheet"
         href="style.css"
     >
+
 </head>
+
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-    <header class="site-header" id="siteHeader">
 
-        <nav class="navbar container" aria-label="Navigasi utama">
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header
+        class="site-header"
+        id="siteHeader"
+    >
+
+        <nav
+            class="navbar container"
+            aria-label="Navigasi utama"
+        >
 
             <a
                 href="#beranda"
@@ -54,6 +74,9 @@
                 T & S
             </a>
 
+
+            <!-- Mobile Menu Button -->
+
             <button
                 class="menu-toggle"
                 id="menuToggle"
@@ -62,18 +85,33 @@
                 aria-expanded="false"
                 aria-controls="mainNavigation"
             >
+
                 <span></span>
                 <span></span>
                 <span></span>
+
             </button>
+
+
+            <!-- Navigation -->
 
             <div
                 class="nav-links"
                 id="mainNavigation"
             >
-                <a href="#beranda">Beranda</a>
-                <a href="#acara">Detail Acara</a>
-                <a href="#rsvp">RSVP</a>
+
+                <a href="#beranda">
+                    Beranda
+                </a>
+
+                <a href="#acara">
+                    Detail Acara
+                </a>
+
+                <a href="#rsvp">
+                    RSVP
+                </a>
+
             </div>
 
         </nav>
@@ -81,27 +119,50 @@
     </header>
 
 
+
     <main>
 
-        <!-- =========================
+
+        <!-- =========================================
              HERO / BERANDA
-        ========================== -->
+        ========================================== -->
+
         <section
             class="hero section"
             id="beranda"
         >
 
+
+            <!-- Decorative Element -->
+
             <div class="hero-decoration hero-decoration-top">
+
                 <span></span>
-                <span class="cross-symbol">✦</span>
+
+                <span class="cross-symbol">
+                    ✦
+                </span>
+
                 <span></span>
+
             </div>
 
+
+
+            <!-- HERO CONTENT -->
+
             <div class="hero-content container">
+
+
+                <!-- Eyebrow -->
 
                 <p class="eyebrow reveal">
                     THE WEDDING OF
                 </p>
+
+
+
+                <!-- Couple Names -->
 
                 <div class="hero-names reveal">
 
@@ -119,41 +180,72 @@
 
                 </div>
 
+
+
+                <!-- Divider -->
+
                 <div class="hero-divider reveal">
+
                     <span></span>
-                    <span>✦</span>
+
+                    <span>
+                        ✦
+                    </span>
+
                     <span></span>
+
                 </div>
+
+
+
+                <!-- Date -->
 
                 <p class="hero-date reveal">
                     Kamis, 17 September 2026
                 </p>
 
+
+
+                <!-- Location -->
+
                 <p class="hero-location reveal">
                     Gereja St. Lukas Praba Ambara
                 </p>
+
+
+
+                <!-- =====================================
+                     COUPLE PHOTO
+                ====================================== -->
 
                 <div class="hero-photo reveal">
 
                     <div class="photo-frame">
 
                         <img
-                            
                             src="assets/images/WhatsApp Image 2026-09-16 at 17.45.47.jpeg"
                             alt="Foto Teresa Sekar Pramitha dan Stefanus Bagas Narendra"
-                            
-                            >
-                        </div>
+                        >
 
                     </div>
 
                 </div>
 
-                <div class="countdown-wrapper reveal">
+
+
+                <!-- =====================================
+                     COUNTDOWN
+                ====================================== -->
+
+                <div
+                    class="countdown-wrapper reveal"
+                    aria-label="Hitung mundur menuju acara"
+                >
 
                     <p class="countdown-label">
                         MENUJU HARI BAHAGIA
                     </p>
+
 
                     <div
                         class="countdown"
@@ -161,33 +253,92 @@
                         aria-live="polite"
                     >
 
+
+                        <!-- DAYS -->
+
                         <div class="countdown-item">
-                            <span id="days">00</span>
-                            <small>Hari</small>
+
+                            <span id="days">
+                                00
+                            </span>
+
+                            <small>
+                                Hari
+                            </small>
+
                         </div>
 
-                        <div class="countdown-separator">:</div>
 
-                        <div class="countdown-item">
-                            <span id="hours">00</span>
-                            <small>Jam</small>
+
+                        <div class="countdown-separator">
+                            :
                         </div>
 
-                        <div class="countdown-separator">:</div>
+
+
+                        <!-- HOURS -->
 
                         <div class="countdown-item">
-                            <span id="minutes">00</span>
-                            <small>Menit</small>
+
+                            <span id="hours">
+                                00
+                            </span>
+
+                            <small>
+                                Jam
+                            </small>
+
                         </div>
 
-                        <div class="countdown-separator">:</div>
+
+
+                        <div class="countdown-separator">
+                            :
+                        </div>
+
+
+
+                        <!-- MINUTES -->
 
                         <div class="countdown-item">
-                            <span id="seconds">00</span>
-                            <small>Detik</small>
+
+                            <span id="minutes">
+                                00
+                            </span>
+
+                            <small>
+                                Menit
+                            </small>
+
+                        </div>
+
+
+
+                        <div class="countdown-separator">
+                            :
+                        </div>
+
+
+
+                        <!-- SECONDS -->
+
+                        <div class="countdown-item">
+
+                            <span id="seconds">
+                                00
+                            </span>
+
+                            <small>
+                                Detik
+                            </small>
+
                         </div>
 
                     </div>
+
+
+
+                    <!-- Countdown Finished -->
 
                     <p
                         class="countdown-finished"
@@ -199,6 +350,12 @@
 
                 </div>
 
+
+
+                <!-- =====================================
+                     DETAIL BUTTON
+                ====================================== -->
+
                 <a
                     href="#acara"
                     class="button button-primary reveal"
@@ -206,25 +363,42 @@
                     LIHAT DETAIL ACARA
                 </a>
 
+
             </div>
+            <!-- END HERO CONTENT -->
+
+
+
+            <!-- Scroll Indicator -->
 
             <div class="scroll-indicator">
-                <span>SCROLL</span>
+
+                <span>
+                    SCROLL
+                </span>
+
                 <i></i>
+
             </div>
+
 
         </section>
 
 
-        <!-- =========================
+
+        <!-- =========================================
              DETAIL ACARA
-        ========================== -->
+        ========================================== -->
+
         <section
             class="event-section section"
             id="acara"
         >
 
             <div class="container">
+
+
+                <!-- Section Heading -->
 
                 <div class="section-heading reveal">
 
@@ -237,15 +411,25 @@
                     </h2>
 
                     <div class="heading-line">
+
                         <span></span>
-                        <span>✦</span>
+
+                        <span>
+                            ✦
+                        </span>
+
                         <span></span>
+
                     </div>
 
                 </div>
 
 
-                <!-- Couple -->
+
+                <!-- =====================================
+                     COUPLE
+                ====================================== -->
+
                 <div class="couple-card reveal">
 
                     <p class="card-label">
@@ -267,9 +451,16 @@
                 </div>
 
 
+
+                <!-- =====================================
+                     EVENT INFORMATION
+                ====================================== -->
+
                 <div class="event-grid">
 
-                    <!-- Date -->
+
+                    <!-- DATE -->
+
                     <article class="info-card reveal">
 
                         <div class="info-icon">
@@ -291,7 +482,9 @@
                     </article>
 
 
-                    <!-- Time -->
+
+                    <!-- TIME -->
+
                     <article class="info-card reveal">
 
                         <div class="info-icon">
@@ -313,7 +506,9 @@
                     </article>
 
 
-                    <!-- Location -->
+
+                    <!-- LOCATION -->
+
                     <article class="info-card info-card-wide reveal">
 
                         <div class="info-icon">
@@ -332,8 +527,11 @@
                             Tempat pelaksanaan pemberkatan pernikahan
                         </p>
 
+
+                        <!-- Google Maps -->
+
                         <a
-                            href="https://share.google/zdQVbhlJqtp4zq05a"
+                            href="https://maps.app.goo.gl/qjvzNtTpBo6Dysyb8"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="button button-outline"
@@ -347,8 +545,13 @@
                 </div>
 
 
-                <!-- Parents -->
+
+                <!-- =====================================
+                     PARENTS
+                ====================================== -->
+
                 <div class="parents-section reveal">
+
 
                     <div class="section-heading small-heading">
 
@@ -362,7 +565,12 @@
 
                     </div>
 
+
+
                     <div class="parents-grid">
+
+
+                        <!-- GROOM PARENTS -->
 
                         <article class="parent-card">
 
@@ -374,7 +582,9 @@
                                 Yosef Andreas Wijaya
                             </h3>
 
-                            <span>&</span>
+                            <span>
+                                &
+                            </span>
 
                             <h3>
                                 Maria Elisabeth Lestari
@@ -382,6 +592,9 @@
 
                         </article>
 
+
+
+                        <!-- BRIDE PARENTS -->
 
                         <article class="parent-card">
 
@@ -393,13 +606,16 @@
                                 Petrus Damianus Gunawan
                             </h3>
 
-                            <span>&</span>
+                            <span>
+                                &
+                            </span>
 
                             <h3>
                                 Monica Theresia Susanti
                             </h3>
 
                         </article>
+
 
                     </div>
 
@@ -410,15 +626,20 @@
         </section>
 
 
-        <!-- =========================
+
+        <!-- =========================================
              RSVP
-        ========================== -->
+        ========================================== -->
+
         <section
             class="rsvp-section section"
             id="rsvp"
         >
 
             <div class="container">
+
+
+                <!-- RSVP Heading -->
 
                 <div class="section-heading reveal">
 
@@ -431,9 +652,15 @@
                     </h2>
 
                     <div class="heading-line">
+
                         <span></span>
-                        <span>✦</span>
+
+                        <span>
+                            ✦
+                        </span>
+
                         <span></span>
+
                     </div>
 
                     <p class="section-description">
@@ -444,13 +671,20 @@
                 </div>
 
 
-                <!-- RSVP Card -->
+
+                <!-- =====================================
+                     RSVP FORM
+                ====================================== -->
+
                 <div class="form-card reveal">
 
                     <form
                         id="rsvpForm"
                         novalidate
                     >
+
+
+                        <!-- NAME -->
 
                         <div class="form-group">
 
@@ -476,6 +710,9 @@
                         </div>
 
 
+
+                        <!-- ATTENDANCE -->
+
                         <fieldset class="form-group">
 
                             <legend>
@@ -483,6 +720,9 @@
                             </legend>
 
                             <div class="radio-group">
+
+
+                                <!-- HADIR -->
 
                                 <label class="radio-option">
 
@@ -499,6 +739,9 @@
                                 </label>
 
 
+
+                                <!-- TIDAK HADIR -->
+
                                 <label class="radio-option">
 
                                     <input
@@ -513,6 +756,7 @@
 
                                 </label>
 
+
                             </div>
 
                             <small
@@ -523,11 +767,15 @@
                         </fieldset>
 
 
+
+                        <!-- SUBMIT -->
+
                         <button
                             type="submit"
                             class="button button-primary button-full"
                             id="rsvpSubmit"
                         >
+
                             <span class="button-text">
                                 KIRIM KONFIRMASI
                             </span>
@@ -538,8 +786,12 @@
                             >
                                 MENYIMPAN...
                             </span>
+
                         </button>
 
+
+
+                        <!-- FEEDBACK -->
 
                         <div
                             class="form-feedback"
@@ -548,13 +800,21 @@
                             aria-live="polite"
                         ></div>
 
+
                     </form>
 
                 </div>
 
 
-                <!-- Guest Wishes -->
+
+                <!-- =====================================
+                     GUEST WISHES
+                ====================================== -->
+
                 <div class="wishes-wrapper">
+
+
+                    <!-- Guest Wishes Heading -->
 
                     <div class="section-heading reveal">
 
@@ -567,13 +827,22 @@
                         </h2>
 
                         <div class="heading-line">
+
                             <span></span>
-                            <span>✦</span>
+
+                            <span>
+                                ✦
+                            </span>
+
                             <span></span>
+
                         </div>
 
                     </div>
 
+
+
+                    <!-- Guest Wishes Form -->
 
                     <div class="form-card reveal">
 
@@ -581,6 +850,9 @@
                             id="wishForm"
                             novalidate
                         >
+
+
+                            <!-- NAME -->
 
                             <div class="form-group">
 
@@ -606,6 +878,9 @@
                             </div>
 
 
+
+                            <!-- MESSAGE -->
+
                             <div class="form-group">
 
                                 <label for="wishMessage">
@@ -621,7 +896,10 @@
                                     required
                                 ></textarea>
 
+
+
                                 <div class="textarea-meta">
+
                                     <small
                                         class="field-error"
                                         id="wishMessageError"
@@ -633,16 +911,21 @@
                                     >
                                         0/500
                                     </small>
+
                                 </div>
 
                             </div>
 
+
+
+                            <!-- SUBMIT -->
 
                             <button
                                 type="submit"
                                 class="button button-primary button-full"
                                 id="wishSubmit"
                             >
+
                                 <span class="button-text">
                                     KIRIM UCAPAN
                                 </span>
@@ -653,8 +936,12 @@
                                 >
                                     MENYIMPAN...
                                 </span>
+
                             </button>
 
+
+
+                            <!-- FEEDBACK -->
 
                             <div
                                 class="form-feedback"
@@ -663,12 +950,17 @@
                                 aria-live="polite"
                             ></div>
 
+
                         </form>
 
                     </div>
 
 
-                    <!-- Wishes list -->
+
+                    <!-- =================================
+                         WISHES LIST
+                    ================================== -->
+
                     <div
                         class="wishes-list"
                         id="wishesList"
@@ -681,6 +973,7 @@
 
                     </div>
 
+
                 </div>
 
             </div>
@@ -690,35 +983,48 @@
     </main>
 
 
-    <!-- =========================
+
+    <!-- =========================================
          FOOTER
-    ========================== -->
+    ========================================== -->
+
     <footer class="site-footer">
 
         <div class="container">
+
 
             <div class="footer-symbol">
                 ✦
             </div>
 
+
             <p class="footer-names">
                 Teresa & Stefanus
             </p>
+
 
             <p class="footer-date">
                 17 • 09 • 2026
             </p>
 
+
             <p class="footer-credit">
                 Wedding Invitation
             </p>
+
 
         </div>
 
     </footer>
 
 
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
