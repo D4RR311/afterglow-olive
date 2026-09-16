@@ -14,7 +14,7 @@ const CONFIG = {
      * GANTI nilai ini dengan URL Web App
      * Google Apps Script setelah deployment.
      */
-    API_URL: "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL",
+    API_URL: "https://script.google.com/macros/s/AKfycbyoiQ74HV9vRGKbFdwuZ1hPGhaFs1oRh7O7Ci1Evt3kFSB2Q3vc_2npKjqWNLzvTOo/exec",
 
     /*
      * URL Google Maps yang digunakan adalah
@@ -22,7 +22,7 @@ const CONFIG = {
      *
      * Tempatkan URL tersebut di sini.
      */
-    MAPS_URL: "PASTE_YOUR_EXISTING_GOOGLE_MAPS_LINK_HERE",
+    MAPS_URL: "https://share.google/zdQVbhlJqtp4zq05a",
 
     /*
      * Target countdown:
